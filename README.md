@@ -38,4 +38,4 @@
 - Repository: The JPA repository interfaces
 - Service: The services class or the business layer
 - Transport: The transport class used with the controllers
-- - Trnaposrt versioning: When needed, a new api may add or remove fields from the transport layer. When that happens, the previous version must be placed inside the correct version (just like the controller) and the controller must point to the correct transport version, making use of a transport adapter to exchange data between the service and the controller.
+- - Trnaposrt versioning: When needed, a new api may add or remove fields from the transport layer. When that happens, the previous version must be placed inside the correct version (just like the controller) and the controller must point to the correct transport version, making use of a transport adapter to exchange data between the service and the controller. This approach allows both versions to run at same time, giving time to third party application to update their model.
