@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "0bd16d27-91cb-46d1-96a2-6c0202509889",
+		"name": "Api example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create new",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"pauta XYZ\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1080/api/v1/SessionTheme",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1080",
+					"path": [
+						"api",
+						"v1",
+						"SessionTheme"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get theme by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1080/api/v1/SessionTheme/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1080",
+					"path": [
+						"api",
+						"v1",
+						"SessionTheme",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1080/api/v1/SessionTheme/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1080",
+					"path": [
+						"api",
+						"v1",
+						"SessionTheme",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "open session by id v1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sessionId\": 4, \"openAt\": \"2021-08-01T20:50:59\", \"duration\": 50}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1080/api/v1/SessionManager",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1080",
+					"path": [
+						"api",
+						"v1",
+						"SessionManager"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vote",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1080/api/v1/SessionVote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1080",
+					"path": [
+						"api",
+						"v1",
+						"SessionVote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vote session result",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
