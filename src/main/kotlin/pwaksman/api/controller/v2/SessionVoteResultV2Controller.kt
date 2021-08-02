@@ -1,4 +1,4 @@
-package pwaksman.api.controller.v1
+package pwaksman.api.controller.v2
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.GetMapping
@@ -9,8 +9,8 @@ import pwaksman.api.service.SessionVoteResultService
 import pwaksman.api.transport.SessionVoteResultTransport
 
 @RestController
-@RequestMapping("/api/v1/SessionVoteResult")
-class SessionVoteResultController {
+@RequestMapping("/api/v2/SessionVoteResult")
+open class SessionVoteResultV2Controller {
 
     @Autowired
     private lateinit var resultService: SessionVoteResultService

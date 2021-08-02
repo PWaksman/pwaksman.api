@@ -52,6 +52,8 @@ class SessionVoteResultService {
         for (record in result)
             voteResult.voteResult[record[0] as String] = record[1] as Long
 
+        if (voteResult.voteResult.isEmpty()) throw InvalidRequestData("No votes for this session")
+
         resultMessageNotification.notify(voteResult)
 
         return voteResult

@@ -1,10 +1,9 @@
-package pwaksman.api.transport
+package pwaksman.api.transport.v1
 
 import java.time.LocalDateTime
 
-open class SessionManagerTransport {
+class SessionManagerV1Transport {
     var id: Long? = null
     var sessionId: Long? = null
     var openAt: LocalDateTime? = null
-    var duration: Long? = null
 }

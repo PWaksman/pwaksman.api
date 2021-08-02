@@ -1,4 +1,4 @@
-package pwaksman.api.controller.v1
+package pwaksman.api.controller.v2
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.RequestMapping
@@ -8,8 +8,8 @@ import pwaksman.api.service.SessionThemeService
 import pwaksman.api.transport.SessionThemeTransport
 
 @RestController
-@RequestMapping("/api/v1/SessionTheme")
-class SessionThemeController : BaseController<SessionThemeTransport, Long, SessionThemeService>() {
+@RequestMapping("/api/v2/SessionTheme")
+open class SessionThemeV2Controller : BaseController<SessionThemeTransport, Long, SessionThemeService>() {
 
     @Autowired
     override lateinit var service: SessionThemeService
